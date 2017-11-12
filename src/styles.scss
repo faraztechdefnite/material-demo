@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~flexboxgrid/dist/flexboxgrid.css';
+@import './theme/theme';
+body {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-size: 62.5%;
+    // Helps fonts on OSX looks more consistent with other systems
+    // Isn't currently in button styles due to performance concerns
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .mat-toolbar{
+      @include box-shadow(0px, 2px, 3px, rgba(111,111,111,0.59));
+    }
+
+}
+  

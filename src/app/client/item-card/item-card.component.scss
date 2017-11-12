@@ -1,0 +1,21 @@
+.mat-card-actions{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+    //text-align: left;
+}
+.mat-card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -.2rem;
+    margin-bottom: 0px;
+}
+
+.mat-card-title:not(:first-child) {
+    margin-top: -14px;
+}

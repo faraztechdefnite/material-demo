@@ -1,0 +1,27 @@
+<div>
+  <div class="row between-xs">
+    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+      <mat-form-field>
+        <mat-select placeholder="Favorite food">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+      <mat-chip-list>
+        <mat-basic-chip>Sort by &nbsp;</mat-basic-chip>
+        <mat-chip>Chip 3</mat-chip>
+        <mat-basic-chip>Filter By &nbsp;</mat-basic-chip>
+        <mat-chip>Chip 2</mat-chip>
+        <mat-chip>Chip 3</mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12" *ngFor="let i of [1,2,3,4,5,5,6]">
+    <app-item-card></app-item-card>
+  </div>
+</div>
